@@ -23,7 +23,17 @@ No tiene ninguna entrada.
 #### 1.5 Salidas.
 55.
 #### 1.6 Codigo.
+'''dart
+void main(List<String> args) {
+  int s = 0, c = 1;
 
+  do {
+    s += c;
+    c++;
+  } while (c <= 10);
+  print("El resultado de la suma de los valores es:$s");
+}
+'''
 ### Ejercicio 2. Contar del 1 hasta el 10 y sumar los valores. (WHILE)
 #### 1.1 Analisis. 
 Sumar los valores del 1 al 10.
@@ -47,7 +57,15 @@ No tiene ninguna entrada.
 #### 1.5 Salidas.
 55.
 #### 1.6 Codigo.
-
+'''dart
+void main(List<String> args) {
+  int s = 0;
+  for (var i = 1; i <= 10; i++) {
+    s += i;
+  }
+  print("La suma de los valores es: $s");
+}
+'''
 ### Ejercicio 3. Contar del 1 hasta el 10 y sumar los valores. (DO-WHILE)
 #### 1.1 Analisis. 
 Sumar los valores del 1 al 10.
