@@ -1148,6 +1148,9 @@ print("Promedio de aprobados:", promedioAprobados)
 #### 1.4 Entradas.
 #### 1.5 Salidas.
 #### 1.6 Codigo.
+```dart
+
+```
 
 ### Ejercicio 29. 
 #### 1.1 Analisis. 
@@ -1157,6 +1160,9 @@ print("Promedio de aprobados:", promedioAprobados)
 #### 1.4 Entradas.
 #### 1.5 Salidas.
 #### 1.6 Codigo.
+```dart
+
+```
 
 ### Ejercicio 30. 
 #### 1.1 Analisis. 
@@ -1166,6 +1172,37 @@ print("Promedio de aprobados:", promedioAprobados)
 #### 1.4 Entradas.
 #### 1.5 Salidas.
 #### 1.6 Codigo.
+```dart
+import 'dart:io';
+import 'dart:core';
+
+void main() {
+  var Re = 0;
+  var mayor = 0;
+  stdout.write('Ingresa tus numeros \n');
+  var lista = List.filled(10, 0);
+  for (var i = 0; i <= 9; i++) {
+    int Entrada = int.parse(stdin.readLineSync()!);
+    lista[i] = Entrada;
+  }
+  var diferencias = List.filled(9, 0);
+  for (var j = 0; j <= 8; j++) {
+    diferencias[j] = (lista[j] - lista[j + 1]);
+  }
+  mayor = diferencias[0];
+  for (var k = 0; k <= 8; k++) {
+    if (mayor < diferencias[k]) {
+      mayor = diferencias[k];
+    } else {}
+  }
+  stdout.write("Tu lista es ");
+  print(lista);
+  stdout.write("y sus diferencias son ");
+  print(diferencias);
+  print('La diferencia mayor es ');
+  print(mayor);
+}
+```
 
 ### Ejercicio 31. 
 #### 1.1 Analisis. 
@@ -1175,6 +1212,19 @@ print("Promedio de aprobados:", promedioAprobados)
 #### 1.4 Entradas.
 #### 1.5 Salidas.
 #### 1.6 Codigo.
+```dart
+import 'dart:io';
+
+void main(List<String> args) {
+  var array = [];
+  int n = int.parse(stdin.readLineSync()!);
+  for (var i = 0; i < 11; i++) {
+    array.add(i);
+    array[i] = n * i;
+  }
+  print('$array');
+}
+```
 
 ### Ejercicio 32. 
 #### 1.1 Analisis. 
@@ -1191,3 +1241,16 @@ print("Promedio de aprobados:", promedioAprobados)
 #### 1.4 Entradas.
 #### 1.5 Salidas.
 #### 1.6 Codigo.
+```dart
+import 'dart:io';
+
+void main() {
+  var n = 5;
+  for (var i = 1; i <= 5; i++) {
+    for (var j = 1; j <= i; j++) {
+      stdout.write('*');
+    }
+    print('');
+  }
+}
+```
