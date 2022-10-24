@@ -4,7 +4,7 @@
 #### 1.1 Analisis. 
 Sumar los valores del 1 al 10.
 #### 1.2 DFD
-![image](https://user-images.githubusercontent.com/113395327/197370994-6bed5c67-531c-4b90-b360-dcf3b6189313.png)
+<img width="317" alt="image" src="https://user-images.githubusercontent.com/113397533/197482412-86f2d746-0b2a-4697-9e93-986f4c73e973.png">
 #### 1.3 Prueba de escritorio
 |s|i|i<=10|s=s+i|i++|Salida|
 |-|-|-|-|-|-|
@@ -23,12 +23,21 @@ No tiene ninguna entrada.
 #### 1.5 Salidas.
 55.
 #### 1.6 Codigo.
-
+'''
+void main(List<String> args) {
+  int s = 0, c = 1;
+  do {
+    s += c;
+    c++;
+  } while (c <= 10);
+  print("El resultado de la suma de los valores es:$s");
+} 
+'''
 ### Ejercicio 2. Contar del 1 hasta el 10 y sumar los valores. (WHILE)
 #### 1.1 Analisis. 
 Sumar los valores del 1 al 10.
 #### 1.2 DFD
-![image](https://user-images.githubusercontent.com/113395327/197401601-6bc0d83e-df63-4273-ad29-1fccf8e1cf54.png)
+<img width="346" alt="image" src="https://user-images.githubusercontent.com/113397533/197482547-5b2e36f0-5e45-4db6-baae-c2e922be92cf.png">
 #### 1.3 Prueba de escritorio 
 |s|c|c<=10|s=s+c|c=c++|Salida|
 |-|-|-|-|-|-|
@@ -52,7 +61,7 @@ No tiene ninguna entrada.
 #### 1.1 Analisis. 
 Sumar los valores del 1 al 10.
 #### 1.2 DFD
-![image](https://user-images.githubusercontent.com/113395327/197401840-390bcb1a-f2cb-4799-8c83-3978dd0ee754.png)
+<img width="142" alt="image" src="https://user-images.githubusercontent.com/113397533/197482703-777821cc-246a-4239-89c9-4777f4f92138.png">
 #### 1.3 Prueba de escritorio 
 |s|c|s=s+c|c=c++|c<=10|Salida|
 |-|-|-|-|-|-|
@@ -76,7 +85,7 @@ No tiene ninguna entrada.
 #### 1.1 Analisis. 
 Sumar los numeros pares del 1 al 10.
 #### 1.2 DFD
-![image](https://user-images.githubusercontent.com/113395327/197371049-0a3fe20e-11ef-4136-94b4-0d2ad7275bc2.png)
+<img width="319" alt="image" src="https://user-images.githubusercontent.com/113397533/197483095-b7029a8b-405d-4fed-9719-317ec75976ae.png">
 #### 1.3 Prueba de escritorio 
 |s|i|i<=5|s=s+ i * 2|i++|salida|
 |-|-|-|-|-|-|
@@ -95,7 +104,7 @@ No tiene ninguna entrada.
 #### 1.1 Analisis.
 Sumar los numeros pares del 1 al 10.
 #### 1.2 DFD
-![image](https://user-images.githubusercontent.com/113395327/197402064-570cad02-fbe8-4d55-bdfc-3c025b1e2286.png)
+<img width="274" alt="image" src="https://user-images.githubusercontent.com/113397533/197483196-a1759175-0442-40d2-afb9-d1f837ec41e3.png">
 #### 1.3 Prueba de escritorio 
 |s|c|c<=5|s=s+ i * 2|c++|salida|
 |-|-|-|-|-|-|
@@ -114,7 +123,7 @@ No tiene ninguna entrada.
 #### 1.1 Analisis.
 Sumar los numeros pares del 1 al 10.
 #### 1.2 DFD
-![image](https://user-images.githubusercontent.com/113395327/197402096-75bf182b-69be-40bc-b2b7-95e5d353861c.png)
+<img width="121" alt="image" src="https://user-images.githubusercontent.com/113397533/197483270-7be732d3-9817-40a8-89f0-ab4dc967d302.png">
 #### 1.3 Prueba de escritorio 
 |s|c|s=s+ i * 2|c++|c<=5|salida|
 |-|-|-|-|-|-|
@@ -133,7 +142,7 @@ No tiene ninguna entrada.
 #### 1.1 Analisis. 
 Debemos almacenar en 10 espacios el numero n.
 #### 1.2 DFD
-![image](https://user-images.githubusercontent.com/113395327/197402229-8076c2bc-525f-445e-8f57-468b827f1eeb.png)
+<img width="320" alt="image" src="https://user-images.githubusercontent.com/113397533/197483385-98b95c68-20a3-44c9-8d38-327821c29863.png">
 #### 1.3 Prueba de escritorio 
 |n|i|i<=9|A[i]=n|i++|
 |-|-|-|-|-|
@@ -157,7 +166,7 @@ A.
 #### 1.1 Analisis. 
 Debemos almacenar en 10 espacios el numero n.
 #### 1.2 DFD
-![image](https://user-images.githubusercontent.com/113395327/197402293-bd4cc849-581f-4e8c-8638-5a9776826320.png)
+<img width="374" alt="image" src="https://user-images.githubusercontent.com/113397533/197483508-47dde31a-b854-4a55-8c71-c0a77d9294c4.png">
 #### 1.3 Prueba de escritorio 
 |n|c|c<=9|A[c]=n|c++|
 |-|-|-|-|-|
@@ -181,7 +190,7 @@ A.
 #### 1.1 Analisis. 
 Debemos almacenar en 10 espacios el numero n.
 #### 1.2 DFD
-![image](https://user-images.githubusercontent.com/113395327/197402325-1e3f53a4-fba0-4296-9012-44f6f9550e39.png)
+<img width="107" alt="image" src="https://user-images.githubusercontent.com/113397533/197483650-daf9996e-19c5-4fa1-82b6-dd152e2526ba.png">
 #### 1.3 Prueba de escritorio 
 |n|c|A[c]=n|c++|c<=9|
 |-|-|-|-|-|
@@ -205,7 +214,7 @@ A.
 #### 1.1 Analisis. 
 Almacenar en 10 espacios diferentes numeros leidos del teclado.
 #### 1.2 DFD
-![image](https://user-images.githubusercontent.com/113395327/197371156-4295ab1d-e995-4f38-8338-0bdcdac36c00.png)
+<img width="327" alt="image" src="https://user-images.githubusercontent.com/113397533/197483822-cbd53387-e772-4d0a-9774-e9a87910ba31.png">
 #### 1.3 Prueba de escritorio 
 |i|i<=9|n|A[i]=n|i+1|
 |-|-|-|-|-|
@@ -229,7 +238,7 @@ A.
 #### 1.1 Analisis. 
 Almacenar en 10 espacios diferentes numeros leidos del teclado.
 #### 1.2 DFD
-![image](https://user-images.githubusercontent.com/113395327/197402477-524b88d2-dcec-414e-8015-489a0de963db.png)
+<img width="357" alt="image" src="https://user-images.githubusercontent.com/113397533/197483952-78ba2766-2a9c-49de-beba-68cb9e04b68e.png">
 #### 1.3 Prueba de escritorio 
 |c|c<=9|n|A[c]=n|c+1|
 |-|-|-|-|-|
@@ -253,7 +262,7 @@ A.
 #### 1.1 Analisis. 
 Almacenar en 10 espacios diferentes numeros leidos del teclado.
 #### 1.2 DFD
-![image](https://user-images.githubusercontent.com/113395327/197405036-fac206f1-3619-44c2-8c64-3fc58a899b1a.png)
+<img width="106" alt="image" src="https://user-images.githubusercontent.com/113397533/197484023-75ef8afd-b848-4c1b-aa88-041a97a81e20.png">
 #### 1.3 Prueba de escritorio 
 |c|n|A[c]=n|c+1|c<=9|
 |-|-|-|-|-|
@@ -275,7 +284,7 @@ Almacenar en 10 espacios diferentes numeros leidos del teclado.
 #### 1.1 Analisis. 
 Almacenar en 10 espacios un conteo regresivo del 10 al 0.
 #### 1.2 DFD
-![image](https://user-images.githubusercontent.com/113395327/197371211-333c3251-eb1f-40f0-b149-1e12870d3be7.png)
+<img width="321" alt="image" src="https://user-images.githubusercontent.com/113397533/197484301-c073569d-1d2d-4dfb-a2af-9e32974abd94.png">
 #### 1.3 Prueba de escritorio 
 |i|i>=0|A[10-i]=i|i--|
 |-|-|-|-|
@@ -300,7 +309,7 @@ A.
 #### 1.1 Analisis. 
 Almacenar en 10 espacios un conteo regresivo del 10 al 0.
 #### 1.2 DFD
-![image](https://user-images.githubusercontent.com/113395327/197405073-a7e022a3-c0ef-46ed-b68a-4554b0d4759e.png)
+<img width="350" alt="image" src="https://user-images.githubusercontent.com/113397533/197484454-ae25ee04-bb12-4444-a577-b5dbb68d81b9.png">
 #### 1.3 Prueba de escritorio 
 |c|c>=0|A[10-c]=c|c--|
 |-|-|-|-|
@@ -324,7 +333,7 @@ A.
 ### Ejercicio 15. Almacene un contador negativo en un vector, el conteo es de 10 a 0. (DO-WHILE)
 #### 1.1 Analisis. Almacenar en 10 espacios un conteo regresivo del 10 al 0.
 #### 1.2 DFD
-![image](https://user-images.githubusercontent.com/113395327/197405102-c906b7b0-0bff-4638-8fce-a677a3c4b865.png)
+<img width="103" alt="image" src="https://user-images.githubusercontent.com/113397533/197484597-786a464b-3d4c-426b-a9f6-86807037fbd4.png">
 #### 1.3 Prueba de escritorio 
 |c|A[10-c]=c|c--|c>=0|
 |-|-|-|-|
@@ -349,7 +358,7 @@ A.
 #### 1.1 Analisis. 
 Tenemos que insertar numero pares y almacenarlos en 10 espacios.
 #### 1.2 DFD
-![image](https://user-images.githubusercontent.com/113395327/197382216-7f05339c-b12f-4d84-9978-8caa04a7534f.png)
+<img width="392" alt="image" src="https://user-images.githubusercontent.com/113397533/197484913-ff8496ff-cffe-4305-b721-70584c3e98ee.png">
 #### 1.3 Prueba de escritorio 
 |i|i<=9|n|n%2==0|A[i]=n|i+1|
 |-|-|-|-|-|-|
@@ -373,7 +382,7 @@ A.
 #### 1.1 Analisis. 
 Tenemos que insertar numero pares y almacenarlos en 10 espacios.
 #### 1.2 DFD
-![image](https://user-images.githubusercontent.com/113395327/197382230-a9f1f438-30d8-44c4-9d04-78c41acc7111.png)
+<img width="327" alt="image" src="https://user-images.githubusercontent.com/113397533/197485065-b309a49f-8454-40fd-aa77-24ea831990a5.png">
 #### 1.3 Prueba de escritorio 
 |c|c<=9|n|n%2==0|A[c]=n|c+1|
 |-|-|-|-|-|-|
@@ -397,7 +406,7 @@ A.
 #### 1.1 Analisis. 
 Tenemos que insertar numero pares y almacenarlos en 10 espacios.
 #### 1.2 DFD
-![image](https://user-images.githubusercontent.com/113395327/197382249-ea63e694-11ef-47fc-bf5b-5f4173ad7766.png)
+<img width="170" alt="image" src="https://user-images.githubusercontent.com/113397533/197485288-e441cfee-d054-4af0-a142-536d2bca6a24.png">
 #### 1.3 Prueba de escritorio 
 |c|n|n%2==0|A[c]=n|c+1|c<=9|
 |-|-|-|-|-|-|
@@ -421,7 +430,7 @@ A.
 #### 1.1 Analisis.
 Sumar las calificaiones de los alumnos aprobados y sacarles el promedio, despues contar la cantidad de reprobados mayores a 5.
 #### 1.2 DFD
-![image](https://user-images.githubusercontent.com/113395327/197411505-2a259b71-368e-4ae0-8399-d6c445b9b111.png)
+<img width="338" alt="image" src="https://user-images.githubusercontent.com/113397533/197485519-72f237ad-8b0b-470f-aa99-85021b87a8bf.png">
 #### 1.3 Prueba de escritorio 
 |i|i<=14|Cal|Cal>=LI|Cal<=LS|A[i]=Cal|i+1|Cal<5|S_A=S_A+Cal|C_A=C_A+1|C_R++|P_A=S_A/C_A|P_A|C_R|
 |-|-|-|-|-|-|-|-|-|-|-|-|-|-|
@@ -449,7 +458,7 @@ P_A; C_R.
 ### Ejercicio 20. Obtener el promedio de las calificaciones aprobatorias y la cantidad de alumnos reprobados. La calificación entre 0 y 10 y el maximo de alumnos es de 15. (WHILE)
 #### 1.1 Analisis. 
 #### 1.2 DFD
-![image](https://user-images.githubusercontent.com/113395327/197417109-b6f776ed-9408-4a55-ab89-fb0fe7bf07c2.png)
+<img width="308" alt="image" src="https://user-images.githubusercontent.com/113397533/197485704-329d2f1f-17c5-4c40-8a3a-9edcb497e2cd.png">
 #### 1.3 Prueba de escritorio 
 |C_Almn|C_Almn<=14|Cal|Cal>=LI|Cal<=LS|A[i]=Cal|i+1|Cal<5|S_A=S_A+Cal|C_A=C_A+1|C_R++|P_A=S_A/C_A|P_A|C_R|
 |-|-|-|-|-|-|-|-|-|-|-|-|-|-|
@@ -477,7 +486,7 @@ P_A; C_R.
 ### Ejercicio 21. Obtener el promedio de las calificaciones aprobatorias y la cantidad de alumnos reprobados. La calificación entre 0 y 10 y el maximo de alumnos es de 15. (DO-WHILE)
 #### 1.1 Analisis. 
 #### 1.2 DFD
-![image](https://user-images.githubusercontent.com/113395327/197417134-8b3fa286-832c-4ac4-a678-80d6132d225d.png)
+<img width="167" alt="image" src="https://user-images.githubusercontent.com/113397533/197485853-0bf37c88-d910-4a2e-bf18-b27ca97893fa.png">
 #### 1.3 Prueba de escritorio 
 |C_Almn|Cal|Cal>=LI|Cal<=LS|A[i]=Cal|i++|Cal<5|S_A=S_A+Cal|C_A=C_A+1|C_R++|C_Almn<=14|P_A=S_A/C_A|P_A|C_R|
 |-|-|-|-|-|-|-|-|-|-|-|-|-|-|
