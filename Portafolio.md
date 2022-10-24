@@ -23,17 +23,15 @@ No tiene ninguna entrada.
 #### 1.5 Salidas.
 55.
 #### 1.6 Codigo.
-'''dart
+```dart
 void main(List<String> args) {
-  int s = 0, c = 1;
-
-  do {
-    s += c;
-    c++;
-  } while (c <= 10);
-  print("El resultado de la suma de los valores es:$s");
+  int s = 0;
+  for (var i = 1; i <= 10; i++) {
+    s += i;
+  }
+  print("La suma de los valores es: $s");
 }
-'''
+```
 ### Ejercicio 2. Contar del 1 hasta el 10 y sumar los valores. (WHILE)
 #### 1.1 Analisis. 
 Sumar los valores del 1 al 10.
@@ -57,15 +55,17 @@ No tiene ninguna entrada.
 #### 1.5 Salidas.
 55.
 #### 1.6 Codigo.
-'''dart
+```dart
 void main(List<String> args) {
-  int s = 0;
-  for (var i = 1; i <= 10; i++) {
-    s += i;
+  int s = 0, c = 1;
+
+  while (c <= 10) {
+    s += c;
+    c++;
   }
-  print("La suma de los valores es: $s");
+  print("El resultado de la suma de los valores es:$s");
 }
-'''
+```
 ### Ejercicio 3. Contar del 1 hasta el 10 y sumar los valores. (DO-WHILE)
 #### 1.1 Analisis. 
 Sumar los valores del 1 al 10.
@@ -89,7 +89,17 @@ No tiene ninguna entrada.
 #### 1.5 Salidas.
 55.
 #### 1.6 Codigo.
+```dart
+void main(List<String> args) {
+  int s = 0, c = 1;
 
+  do {
+    s += c;
+    c++;
+  } while (c <= 10);
+  print("El resultado de la suma de los valores es:$s");
+}
+```
 ### Ejercicio 4. Obtenga la suma de los primeros 5 numeros pares. (FOR)
 #### 1.1 Analisis. 
 Sumar los numeros pares del 1 al 10.
@@ -108,7 +118,15 @@ No tiene ninguna entrada.
 #### 1.5 Salidas.
 30.
 #### 1.6 Codigo.
-
+```dart
+void main(List<String> args) {
+  int s = 0;
+  for (var i = 2; i <= 10; i = i + 2) {
+    s = s + i;
+  }
+  print("resultado de la suma de numeros pares es:$s");
+}
+```
 ### Ejercicio 5. Obtenga la suma de los primeros 5 numeros pares. (WHILE)
 #### 1.1 Analisis.
 Sumar los numeros pares del 1 al 10.
@@ -127,7 +145,16 @@ No tiene ninguna entrada.
 #### 1.5 Salidas.
 30.
 #### 1.6 Codigo.
-
+```dart
+void main(List<String> args) {
+  int s = 0, c = 1;
+  while (c <= 5) {
+    s = s + c * 2;
+    c = c + 1;
+  }
+  print("resultado de la suma de numeros pares:$s");
+}
+```
 ### Ejercicio 6. Obtenga la suma de los primeros 5 numeros pares. (DO-WHILE)
 #### 1.1 Analisis.
 Sumar los numeros pares del 1 al 10.
@@ -146,7 +173,17 @@ No tiene ninguna entrada.
 #### 1.5 Salidas.
 30.
 #### 1.6 Codigo.
+```dart
+void main(List<String> args) {
+  int s = 0, c = 1;
 
+  do {
+    s = s + c * 2;
+    c = c + 1;
+  } while (c <= 5);
+  print("la suma de numeros pares es:$s");
+}
+```
 ### Ejercicio 7. Almacene en un array el numero n leido del teclado, el tamaño del array es de 10. (FOR)
 #### 1.1 Analisis. 
 Debemos almacenar en 10 espacios el numero n.
@@ -170,7 +207,21 @@ n.
 #### 1.5 Salidas.
 A.
 #### 1.6 Codigo.
-
+```dart
+void main() {
+  var arra = new List.filled(10, 0);
+  stdout.write("Dame diez numeros\n ");
+  stdout.write("----------\n");
+  for (var i = 0; i <= 9; i++) {
+    String? s = stdin.readLineSync();
+    if (s != null) {
+      int n = int.parse(s);
+      arra[i] = n;
+    }
+  }
+  stdout.write("aqui esta la lista, $arra");
+}
+```
 ### Ejercicio 8. Almacene en un array el numero n leido del teclado, el tamaño del array es de 10. (WHILE)
 #### 1.1 Analisis. 
 Debemos almacenar en 10 espacios el numero n.
@@ -194,7 +245,23 @@ n.
 #### 1.5 Salidas.
 A.
 #### 1.6 Codigo.
-
+```dart
+void main() {
+  var arra = new List.filled(10, 0);
+  stdout.write("Dame diez numeros\n ");
+  stdout.write("----------\n");
+  int i = 0;
+  while (i <= 9) {
+    String? s = stdin.readLineSync();
+    if (s != null) {
+      int ner = int.parse(s);
+      arra[i] = ner;
+    }
+    i++;
+  }
+  stdout.write("Tu lista es, $arra ");
+}
+```
 ### Ejercicio 9. Almacene en un array el numero n leido del teclado, el tamaño del array es de 10. (DO-WHILE)
 #### 1.1 Analisis. 
 Debemos almacenar en 10 espacios el numero n.
@@ -218,7 +285,23 @@ n.
 #### 1.5 Salidas.
 A.
 #### 1.6 Codigo.
-
+```dart
+void main() {
+  var arra = new List.filled(10, 0);
+  stdout.write("Dame diez numeros\n ");
+  stdout.write("----------\n");
+  int i = 0;
+  do {
+    String? s = stdin.readLineSync();
+    if (s != null) {
+      int n = int.parse(s);
+      arra[i] = n;
+      i++;
+    }
+  } while (i <= 9);
+  stdout.write("Tu lista es $arra ");
+}
+```
 ### Ejercicio 10. Almacene los n numeros leidos del teclado en un vector de 10 elementos. (FOR)
 #### 1.1 Analisis. 
 Almacenar en 10 espacios diferentes numeros leidos del teclado.
@@ -242,7 +325,21 @@ n.
 #### 1.5 Salidas.
 A.
 #### 1.6 Codigo.
-
+```dart
+void main() {
+  var arra = new List.filled(10, 0);
+  stdout.write("Dame diez numeros\n ");
+  stdout.write("----------\n");
+  for (var i = 0; i <= 9; i++) {
+    String? s = stdin.readLineSync();
+    if (s != null) {
+      int n = int.parse(s);
+      arra[i] = n;
+    }
+  }
+  stdout.write("aqui esta la lista, $arra");
+}
+```
 ### Ejercicio 11. Almacene los n numeros leidos del teclado en un vector de 10 elementos. (WHILE)
 #### 1.1 Analisis. 
 Almacenar en 10 espacios diferentes numeros leidos del teclado.
@@ -266,7 +363,23 @@ n.
 #### 1.5 Salidas.
 A.
 #### 1.6 Codigo.
-
+```dart
+void main() {
+  var arra = new List.filled(10, 0);
+  stdout.write("Dame diez numeros\n ");
+  stdout.write("----------\n");
+  int i = 0;
+  while (i <= 9) {
+    String? s = stdin.readLineSync();
+    if (s != null) {
+      int ner = int.parse(s);
+      arra[i] = ner;
+    }
+    i++;
+  }
+  stdout.write("Tu lista es, $arra ");
+}
+```
 ### Ejercicio 12. Almacene los n numeros leidos del teclado en un vector de 10 elementos. (DO-WHILE)
 #### 1.1 Analisis. 
 Almacenar en 10 espacios diferentes numeros leidos del teclado.
@@ -288,7 +401,23 @@ Almacenar en 10 espacios diferentes numeros leidos del teclado.
 #### 1.4 Entradas.
 #### 1.5 Salidas.
 #### 1.6 Codigo.
-
+```dart
+void main() {
+  var arra = new List.filled(10, 0);
+  stdout.write("Dame diez numeros\n ");
+  stdout.write("----------\n");
+  int i = 0;
+  do {
+    String? s = stdin.readLineSync();
+    if (s != null) {
+      int n = int.parse(s);
+      arra[i] = n;
+      i++;
+    }
+  } while (i <= 9);
+  stdout.write("Tu lista es $arra ");
+}
+```
 ### Ejercicio 13. Almacene un contador negativo en un vector, el conteo es de 10 a 0. (FOR)
 #### 1.1 Analisis. 
 Almacenar en 10 espacios un conteo regresivo del 10 al 0.
@@ -313,7 +442,15 @@ No tiene entradas.
 #### 1.5 Salidas.
 A.
 #### 1.6 Codigo.
-
+```dart
+void main() {
+  var arr = <int>[0, 1, 2, 3, 4, 5, 6, 7, 8, 9, 10];
+  for (var i = 10; i >= 0; i--) {
+    arr[10 - i] = i;
+  }
+  print(arr);
+}
+```
 ### Ejercicio 14. Almacene un contador negativo en un vector, el conteo es de 10 a 0. (WHILE)
 #### 1.1 Analisis. 
 Almacenar en 10 espacios un conteo regresivo del 10 al 0.
@@ -338,7 +475,17 @@ No tiene entradas.
 #### 1.5 Salidas.
 A.
 #### 1.6 Codigo.
-
+```dart
+void main() {
+  var arr = <int>[0, 1, 2, 3, 4, 5, 6, 7, 8, 9, 10];
+  int c = 10;
+  while (c >= 0) {
+    arr[10 - c] = c;
+    c = c - 1;
+  }
+  print(arr);
+}
+```
 ### Ejercicio 15. Almacene un contador negativo en un vector, el conteo es de 10 a 0. (DO-WHILE)
 #### 1.1 Analisis. Almacenar en 10 espacios un conteo regresivo del 10 al 0.
 #### 1.2 DFD
@@ -362,7 +509,17 @@ No tiene entradas.
 #### 1.5 Salidas.
 A.
 #### 1.6 Codigo.
-
+```dart
+void main() {
+  var arr = <int>[0, 1, 2, 3, 4, 5, 6, 7, 8, 9, 10];
+  int c = 10;
+  do {
+    arr[10 - c] = c;
+    c = c - 1;
+  } while (c >= 0);
+  print(arr);
+}
+```
 ### Ejercicio 16. Almacene en un vector de tamaño 10, todos los numeros pares capturados hasta completar todos. (FOR)
 #### 1.1 Analisis. 
 Tenemos que insertar numero pares y almacenarlos en 10 espacios.
@@ -386,7 +543,25 @@ n.
 #### 1.5 Salidas.
 A.
 #### 1.6 Codigo.
+```py
+numeros = [2, 4, 6, 8, 10, 12, 14, 16, 18, 20]
 
+def extraer_pares(lista):
+    pares = []
+
+    for n in lista:
+        if n % 2 == 0:
+            pares.append(n)
+
+    return pares
+
+print()
+
+resultado = extraer_pares(numeros)
+
+print("Contenido de la variable`resultado`:", resultado)
+print("Cantidad de elementos en la lista `resultado`:", len(resultado))
+```
 ### Ejercicio 17. Almacene en un vector de tamaño 10, todos los numeros pares capturados hasta completar todos. (WHILE)
 #### 1.1 Analisis. 
 Tenemos que insertar numero pares y almacenarlos en 10 espacios.
@@ -410,7 +585,24 @@ n.
 #### 1.5 Salidas.
 A.
 #### 1.6 Codigo.
+```py
+numeros = [2, 4, 6, 8, 10, 12, 14, 16, 18, 20]
+def extraer_pares(lista):
+    pares = []
 
+    for n in lista:
+        if n % 2 == 0:
+            pares.append(n)
+
+    return pares
+
+print()
+
+resultado = extraer_pares(numeros)
+
+print("Contenido de la variable`resultado`:", resultado)
+print("Cantidad de elementos en la lista `resultado`:", len(resultado))
+```
 ### Ejercicio 18. Almacene en un vector de tamaño 10, todos los numeros pares capturados hasta completar todos. (DO-WHILE)
 #### 1.1 Analisis. 
 Tenemos que insertar numero pares y almacenarlos en 10 espacios.
@@ -434,7 +626,24 @@ n.
 #### 1.5 Salidas.
 A.
 #### 1.6 Codigo.
+```dart
+import 'dart:io';
+import 'dart:async';
 
+void main() {
+  var array = [];
+  var c = 0;
+  do {
+    int n = int.parse(stdin.readLineSync()!);
+
+    if (n % 2 == 0) {
+      array.add(n);
+      c = c + 1;
+    }
+  } while (c <= 9);
+  print(array);
+}
+```
 ### Ejercicio 19. Obtener el promedio de las calificaciones aprobatorias y la cantidad de alumnos reprobados. La calificación entre 0 y 10 y el maximo de alumnos es de 15. (FOR)
 #### 1.1 Analisis.
 Sumar las calificaiones de los alumnos aprobados y sacarles el promedio, despues contar la cantidad de reprobados mayores a 5.
@@ -463,7 +672,31 @@ Cal.
 #### 1.5 Salidas.
 P_A; C_R.
 #### 1.6 Codigo.
+```py
+alumnos = list(range(15))
+p_aprobados = 0
+j = 0
 
+for i in alumnos: 
+    while(True):
+        calificacion = int(input("Ingresa la calificación >>"))
+        if (calificacion >= 0 and calificacion <= 10):
+            break
+        else:
+            print("Calificación fuera de rango. Intenta de nuevo")
+ 
+    if (calificacion < 6):
+     alumnos[i] = "R"
+    else:
+     p_aprobados = calificacion + p_aprobados
+     j = j + 1
+     alumnos[i] = "A"
+
+print("\033[33;1m",alumnos,"\033[39m")
+print("El promedio de calificación de los aprobados es de >>",round(p_aprobados/j,2))
+print("El total de aprobados fueron >> ",j)
+print("El total de reprobados fueron >> ",(len(alumnos)-j))
+```
 ### Ejercicio 20. Obtener el promedio de las calificaciones aprobatorias y la cantidad de alumnos reprobados. La calificación entre 0 y 10 y el maximo de alumnos es de 15. (WHILE)
 #### 1.1 Analisis. 
 #### 1.2 DFD
@@ -491,7 +724,31 @@ Cal.
 #### 1.5 Salidas.
 P_A; C_R.
 #### 1.6 Codigo.
+```py
+alumnos = list(range(15))
+p_aprobados = 0
+j = 0
 
+for i in alumnos: 
+    while(True):
+        calificacion = int(input("Ingresa la calificación >>"))
+        if (calificacion >= 0 and calificacion <= 10):
+            break
+        else:
+            print("Calificación fuera de rango. Intenta de nuevo")
+ 
+    if (calificacion < 6):
+     alumnos[i] = "R"
+    else:
+     p_aprobados = calificacion + p_aprobados
+     j = j + 1
+     alumnos[i] = "A"
+
+print("\033[33;1m",alumnos,"\033[39m")
+print("El promedio de calificación de los aprobados es de >>",round(p_aprobados/j,2))
+print("El total de aprobados fueron >> ",j)
+print("El total de reprobados fueron >> ",(len(alumnos)-j))
+```
 ### Ejercicio 21. Obtener el promedio de las calificaciones aprobatorias y la cantidad de alumnos reprobados. La calificación entre 0 y 10 y el maximo de alumnos es de 15. (DO-WHILE)
 #### 1.1 Analisis. 
 #### 1.2 DFD
@@ -519,7 +776,49 @@ Cal.
 #### 1.5 Salidas.
 P_A; C_R.
 #### 1.6 Codigo.
+```dart
+import 'dart:io';
+import 'dart:async';
 
+void main() {
+  double PromA = 0;
+  var contr = 0;
+  double sumaA = 0;
+  double contA = 0;
+  double cal1 = 0;
+  double cal2 = 1;
+  var cont = 0;
+  stdout.write("Dame las calificaciones\n ");
+  stdout.write("----------\n");
+  do {
+    double c = double.parse(stdin.readLineSync()!);
+    cont = cont +1;
+    if (c > 10) {
+      print('La calificacion no puede ser mayor a 10');
+      cont = cont - 1;
+    }
+    if (c < 0) {
+      print('La calificacion no puede ser menor a 0');
+      cont = cont - 1;
+    }
+    if (c < 6 && c > 0) {
+      contr = contr + 1;
+    }
+    if (c <= 10 && c >= 6) {
+      cal1 = c;
+      sumaA = sumaA + cal1;
+      contA++;
+    }
+    if (cal1 > cal2) {
+      cal2 = cal1;
+    }
+  } while (cont <= 14);
+  PromA = sumaA / contA;
+  print('El promedio de aprobados es $PromA');
+  print('La calificacion mas alta es $cal2');
+  print('La cantidad de reprobados son $contr');
+}
+```
 ### Ejercicio 22. 
 #### 1.1 Analisis. 
 #### 1.2 DFD
@@ -528,7 +827,67 @@ P_A; C_R.
 #### 1.4 Entradas.
 #### 1.5 Salidas.
 #### 1.6 Codigo.
+```py
+sp=0
+cp=0
+pp=0
+si=0
+ci=0
+pi=0
+li=-1
+ls=-1
+n=-1
+num=-1
 
+while(li<0):
+    li = int(input("Limite inferior: "))
+    
+    if(li<0):
+        print("Tiene que ser mayor a 0")
+        
+while(ls<li):
+    ls = int(input("Limite superior: "))
+    
+    if(ls<li):
+        print("Tiene que ser mayor que el limite inferior")
+        
+while(n<0):
+    n = int(input("¿Cuantos numeros? "))
+    
+    if(n<0):
+        print("Tiene que ser mayor a 0")
+    
+for i in range(n): 
+    while(num<=li or num>=ls):
+        num = int(input("Dame un numero de LI y LS: "))
+        
+        if(num<=li or num>=ls):
+            print("Tiene que estar dentro del LI al LS")
+
+    if(num%2==0):
+        sp=sp+num
+        cp=cp+1
+    else:
+        si=si+num
+        ci=ci+1
+        
+    num=-1       
+         
+if(sp==0 or cp==0):
+    pp=0
+else:
+    pp=sp/cp
+    
+if(si==0 or ci==0):
+    pi=0
+else:
+    pi=si/ci
+    
+if(pp>pi):
+    print("El PP es mayor que el PI")
+else:
+    print("El PI es mayor que el PP")
+```
 ### Ejercicio 23. 
 #### 1.1 Analisis. 
 #### 1.2 DFD
@@ -537,7 +896,49 @@ P_A; C_R.
 #### 1.4 Entradas.
 #### 1.5 Salidas.
 #### 1.6 Codigo.
+```py
+print("Dame Límite inferior: ")
+Li = int(input())
+while Li<0:
+    print("El límite inferior debe ser mayor a 0")
+    print("Dame Límite inferior: ")
+    Li = int(input())
 
+print("Dame límite superior: ")
+Ls = int(input())
+while Ls<=Li:
+    print("El límite superior no puede ser menor o igual al limite inferior")
+    print("Dame límite superior: ")
+    Ls = int(input())
+
+pares = 0
+impares = 0
+
+lista=[]
+for x in range(10):
+    valor=int(input("Ingrese un valor entero: "))
+    lista.append(valor)
+print(lista)
+
+for a in lista:
+    if a % 2 == 0:
+        pares = pares + a
+    else:
+        impares = impares + a
+print("La suma de los números pares es: ",pares)
+print("La suma de los números impares es: ",impares)
+
+prom_pares = pares / a
+prom_impares = impares / a
+
+print("El promedio de los números pares es: ",prom_pares)
+print("El promedio de los números impares es: ",prom_impares)
+
+if prom_pares > prom_impares:
+    print("El promedio de los pares es mayor que el promedio de los impares.")
+else:
+    print("El promedio de los números impares es mayor que el promedio de los pares.")
+```
 ### Ejercicio 24. 
 #### 1.1 Analisis. 
 #### 1.2 DFD
@@ -546,7 +947,55 @@ P_A; C_R.
 #### 1.4 Entradas.
 #### 1.5 Salidas.
 #### 1.6 Codigo.
+```dar
+import 'dart:io';
 
+void main() {
+  double sumap = 0;
+  double sumai = 0;
+  var contp = 0;
+  var conti = 0;
+  double promp = 0;
+  double promi = 0;
+  print('Introduce el limite inferior, mayor a 0');
+  var li = int.parse(stdin.readLineSync()!);
+  if (li < 0) {
+    print('tu limite inferior debe ser mayor a 0');
+  }
+  if (li > 0) {
+    print('Ahora introduce un limite superior');
+    var ls = int.parse(stdin.readLineSync()!);
+    if (ls < li) {
+      print('tu limite superior debe ser mayor a tu limite inferior');
+    }
+    var cont = li;
+    do {
+      if (cont <= ls) {
+        sumai = sumai + cont;
+        conti = conti + 1;
+      }
+      if (cont % 2 == 0) {
+        sumap = sumap + cont;
+        contp = contp + 1;
+        sumai = sumai - cont;
+        conti = conti - 1;
+      }
+      cont = cont + 1;
+    } while (cont <= ls);
+
+    promi = sumai / conti;
+    print('los impares son $conti y su promedio es $promi');
+    promp = sumap / contp;
+    print('los pares son $contp y su promedio es $promp');
+    if (promp < promi) {
+      print('$promi es mayor');
+    }
+    if (promp > promi) {
+      print('el promedio $promp es mayor');
+    }
+  }
+}
+```
 ### Ejercicio 25. 
 #### 1.1 Analisis. 
 #### 1.2 DFD
@@ -555,7 +1004,49 @@ P_A; C_R.
 #### 1.4 Entradas.
 #### 1.5 Salidas.
 #### 1.6 Codigo.
+```py
+Calificaciones=int(input("Ingrese la cantidad de calificaciones"))
+vec=[]
+n=0
 
+for i in range(1,Calificaciones+1):
+    calificacion=int(input("Calificacion: "))
+    n=n+calificacion
+    vec.append(calificacion)
+
+promedio=n/len(vec)
+
+npromedio=0
+for j in vec:
+    if j>promedio:
+        npromedio=npromedio+1
+
+aprobado=0
+
+#Primero inicializas el contador
+promedioAprobados = 0
+for h in vec:
+    if h>5:
+        aprobado=aprobado+1
+        #Va sumando cada unas de las notas
+        promedioAprobados = promedioAprobados + h
+
+#Luego saca el promedio sumatoria / cantidad de aprobados 
+promedioAprobados = promedioAprobados / aprobado
+
+reprobado=0
+for k in vec:
+    if k<5:
+        reprobado=reprobado+1
+
+print("Max Calificacion", max(vec))
+print("Min calificacion", min(vec))
+print("Promedio:", promedio)
+print("Superiores a promedio:", npromedio)
+print("Cantidad de aprobados:", aprobado)
+print("Promedio de aprobados:", promedioAprobados)
+print("Desaprobados:", reprobado)
+```
 ### Ejercicio 26. 
 #### 1.1 Analisis. 
 #### 1.2 DFD
@@ -564,7 +1055,50 @@ P_A; C_R.
 #### 1.4 Entradas.
 #### 1.5 Salidas.
 #### 1.6 Codigo.
+```py
+Calificaciones=int(input("Ingrese la cantidad de calificaciones"))
+vec=[]
+n=0
+cont = 0
+while(cont < Calificaciones):
+    calificacion=int(input("Calificacion: "))
+    n=n+calificacion
+    vec.append(calificacion)
+    cont += 1
 
+promedio=n/len(vec)
+
+npromedio=0
+for j in vec:
+    if j>promedio:
+        npromedio=npromedio+1
+
+aprobado=0
+
+#Primero inicializas el contador
+promedioAprobados = 0
+for h in vec:
+    if h>5:
+        aprobado=aprobado+1
+        #Va sumando cada unas de las notas
+        promedioAprobados = promedioAprobados + h
+
+#Luego saca el promedio sumatoria / cantidad de aprobados 
+promedioAprobados = promedioAprobados / aprobado
+
+reprobado=0
+for k in vec:
+    if k<5:
+        reprobado=reprobado+1
+
+print("Max Calificacion", max(vec))
+print("Min calificacion", min(vec))
+print("Promedio:", promedio)
+print("Superiores a promedio:", npromedio)
+print("Cantidad de aprobados:", aprobado)
+print("Promedio de aprobados:", promedioAprobados)
+print("Desaprobados:", reprobado)
+```
 ### Ejercicio 27. 
 #### 1.1 Analisis. 
 #### 1.2 DFD
@@ -573,7 +1107,39 @@ P_A; C_R.
 #### 1.4 Entradas.
 #### 1.5 Salidas.
 #### 1.6 Codigo.
+```py
+Calificaciones=int(input("Ingrese la cantidad de calificaciones"))
+vec=[]
+n=0
 
+cont = 0
+while(True):
+    calificacion=int(input("Calificacion: "))
+    n=n+calificacion
+    vec.append(calificacion)
+    cont += 1
+    if(cont>=Calificaciones):
+        break;
+        
+aprobado=0
+
+promedioAprobados = 0
+for h in vec:
+    if h>=5:
+        aprobado=aprobado+1
+        promedioAprobados = promedioAprobados + h
+
+promedioAprobados = promedioAprobados / aprobado
+
+reprobado=0
+for k in vec:
+    if k<=5:
+        reprobado=reprobado+1
+
+print("Cantidad de aprobados:", aprobado)
+print("Cantidad de reprobados:", reprobado)
+print("Promedio de aprobados:", promedioAprobados)
+```
 ### Ejercicio 28. 
 #### 1.1 Analisis. 
 #### 1.2 DFD
