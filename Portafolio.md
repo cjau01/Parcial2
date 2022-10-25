@@ -1143,7 +1143,7 @@ print("Promedio de aprobados:", promedioAprobados)
 
 ### Ejercicio 28. 
 #### 1.1 Analisis. 
-#### 1.2 DFD
+#### 1.2 DFD.
 ![image](https://user-images.githubusercontent.com/113395327/197483146-55c5bd23-3545-4372-b004-843558fc1981.png)
 #### 1.3 Prueba de escritorio 
 #### 1.4 Entradas.
