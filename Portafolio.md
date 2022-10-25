@@ -1149,8 +1149,17 @@ print("Promedio de aprobados:", promedioAprobados)
 #### 1.4 Entradas.
 #### 1.5 Salidas.
 #### 1.6 Codigo.
-```dart
+```py
+lista = [10]
+cant = int(input("¿Cuantos numeros desea capturar?"))
+i=1
+while i <= cant:
+    n = int(input(f"{i} Ingrese un numero: "))
+    lista.append(n)
+    i+=1
 
+print("Numero mayor es ",max(lista))
+print("Numero menor es ",min(lista))
 ```
 
 ### Ejercicio 29. 
