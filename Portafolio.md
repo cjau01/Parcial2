@@ -1140,19 +1140,8 @@ print("Cantidad de aprobados:", aprobado)
 print("Cantidad de reprobados:", reprobado)
 print("Promedio de aprobados:", promedioAprobados)
 ```
+
 ### Ejercicio 28. 
-#### 1.1 Analisis. 
-#### 1.2 DFD
-![image](https://user-images.githubusercontent.com/113395327/197483050-199efa86-cc20-4e8c-ab87-c507e6c93426.png)
-#### 1.3 Prueba de escritorio 
-#### 1.4 Entradas.
-#### 1.5 Salidas.
-#### 1.6 Codigo.
-```dart
-
-```
-
-### Ejercicio 29. 
 #### 1.1 Analisis. 
 #### 1.2 DFD
 ![image](https://user-images.githubusercontent.com/113395327/197483146-55c5bd23-3545-4372-b004-843558fc1981.png)
@@ -1164,7 +1153,7 @@ print("Promedio de aprobados:", promedioAprobados)
 
 ```
 
-### Ejercicio 30. 
+### Ejercicio 29. 
 #### 1.1 Analisis. 
 #### 1.2 DFD
 ![image](https://user-images.githubusercontent.com/113395327/197483758-f4ea6e26-8ab1-4dd7-8bc4-37658cb6fc93.png)
@@ -1204,7 +1193,7 @@ void main() {
 }
 ```
 
-### Ejercicio 31. 
+### Ejercicio 30. 
 #### 1.1 Analisis. 
 #### 1.2 DFD
 ![image](https://user-images.githubusercontent.com/113395327/197483811-31f1c1c8-3223-41b1-a71a-02bd0ecb54dc.png)
@@ -1226,7 +1215,7 @@ void main(List<String> args) {
 }
 ```
 
-### Ejercicio 32. 
+### Ejercicio 31. 
 #### 1.1 Analisis. 
 #### 1.2 DFD
 ![image](https://user-images.githubusercontent.com/113395327/197483869-000b9f97-54a5-4fa8-b514-fc84528984c0.png)
