@@ -186,7 +186,7 @@ void main(List<String> args) {
 ```
 ### Ejercicio 3. Almacene en un array el numero n leido del teclado, el tamaño del array es de 10. (FOR)
 #### 1.1 Analisis. 
-Debemos almacenar en 10 espacios el numero n.
+Debemos almacenar en un array los 10 numeros que proporcionará el usuario.
 #### 1.2 DFD
 ![3 (for)](https://user-images.githubusercontent.com/113395327/197660869-62d12335-0cbe-471c-87e0-1b17ae9c1cf6.png)
 #### 1.3 Prueba de escritorio 
@@ -222,9 +222,9 @@ void main() {
   stdout.write("aqui esta la lista, $arra");
 }
 ```
-### Ejercicio 8. Almacene en un array el numero n leido del teclado, el tamaño del array es de 10. (WHILE)
+### Ejercicio 3. Almacene en un array el numero n leido del teclado, el tamaño del array es de 10. (WHILE)
 #### 1.1 Analisis. 
-Debemos almacenar en 10 espacios el numero n.
+Debemos almacenar en un array los 10 numeros que proporcionará el usuario.
 #### 1.2 DFD
 ![3 (While)](https://user-images.githubusercontent.com/113395327/197660901-d4ae6f43-b708-4ab3-9157-f1160f8b80af.png)
 #### 1.3 Prueba de escritorio 
@@ -264,7 +264,7 @@ void main() {
 ```
 ### Ejercicio 3. Almacene en un array el numero n leido del teclado, el tamaño del array es de 10. (DO-WHILE)
 #### 1.1 Analisis. 
-Debemos almacenar en 10 espacios el numero n.
+Debemos almacenar en un array los 10 numeros que proporcionará el usuario.
 #### 1.2 DFD
 ![3 (Do-While)](https://user-images.githubusercontent.com/113395327/197660916-b013d497-3144-4e52-a095-cefebc079a15.png)
 #### 1.3 Prueba de escritorio 
@@ -489,7 +489,8 @@ void main() {
 }
 ```
 ### Ejercicio 5. Almacene un contador negativo en un vector, el conteo es de 10 a 0. (DO-WHILE)
-#### 1.1 Analisis. Almacenar en 10 espacios un conteo regresivo del 10 al 0.
+#### 1.1 Analisis.
+Almacenar en 10 espacios un conteo regresivo del 10 al 0.
 #### 1.2 DFD
 ![5 (Do-While)](https://user-images.githubusercontent.com/113395327/197661111-4c8e2d90-88c6-4952-a8f8-ebe2f856e4ad.png)
 #### 1.3 Prueba de escritorio 
@@ -524,7 +525,7 @@ void main() {
 ```
 ### Ejercicio 6. Almacene en un vector de tamaño 10, todos los numeros pares capturados hasta completar todos. (FOR)
 #### 1.1 Analisis. 
-Tenemos que insertar numero pares y almacenarlos en 10 espacios.
+Debemos validar que todos los numeros recibidos sean pares para almacenarlos en un vector de tamaño 10.
 #### 1.2 DFD
 ![image](https://user-images.githubusercontent.com/113395327/197382216-7f05339c-b12f-4d84-9978-8caa04a7534f.png)
 #### 1.3 Prueba de escritorio 
@@ -566,7 +567,7 @@ print("Cantidad de elementos en la lista `resultado`:", len(resultado))
 ```
 ### Ejercicio 6. Almacene en un vector de tamaño 10, todos los numeros pares capturados hasta completar todos. (WHILE)
 #### 1.1 Analisis. 
-Tenemos que insertar numero pares y almacenarlos en 10 espacios.
+Debemos validar que todos los numeros recibidos sean pares para almacenarlos en un vector de tamaño 10.
 #### 1.2 DFD
 ![image](https://user-images.githubusercontent.com/113395327/197382230-a9f1f438-30d8-44c4-9d04-78c41acc7111.png)
 #### 1.3 Prueba de escritorio 
@@ -607,7 +608,7 @@ print("Cantidad de elementos en la lista `resultado`:", len(resultado))
 ```
 ### Ejercicio 6. Almacene en un vector de tamaño 10, todos los numeros pares capturados hasta completar todos. (DO-WHILE)
 #### 1.1 Analisis. 
-Tenemos que insertar numero pares y almacenarlos en 10 espacios.
+Debemos validar que todos los numeros recibidos sean pares para almacenarlos en un vector de tamaño 10.
 #### 1.2 DFD
 ![image](https://user-images.githubusercontent.com/113395327/197382249-ea63e694-11ef-47fc-bf5b-5f4173ad7766.png)
 #### 1.3 Prueba de escritorio 
@@ -648,7 +649,7 @@ void main() {
 ```
 ### Ejercicio 7. Obtener el promedio de las calificaciones aprobatorias y la cantidad de alumnos reprobados. La calificación entre 0 y 10 y el maximo de alumnos es de 15. (FOR)
 #### 1.1 Analisis.
-Sumar las calificaiones de los alumnos aprobados y sacarles el promedio, despues contar la cantidad de reprobados mayores a 5.
+Se necesita evaluar todas las calificaciones obtenidas para determinar si son aprobatorias o no, una vez hecho esto se deben realizar las sumas correspondientes para posteriormente sacar el promedio de los alumnos aprobados y ver cuantos alumnos reprobaron.
 #### 1.2 DFD
 ![7 (for)](https://user-images.githubusercontent.com/113395327/197688395-c0923fad-0ca5-4de4-82d6-1bab7203d080.png)
 #### 1.3 Prueba de escritorio 
@@ -701,7 +702,7 @@ print("El total de reprobados fueron >> ",(len(alumnos)-j))
 ```
 ### Ejercicio 7. Obtener el promedio de las calificaciones aprobatorias y la cantidad de alumnos reprobados. La calificación entre 0 y 10 y el maximo de alumnos es de 15. (WHILE)
 #### 1.1 Analisis. 
-Sumar las calificaiones de los alumnos aprobados y sacarles el promedio, despues contar la cantidad de reprobados mayores a 5.
+Se necesita evaluar todas las calificaciones obtenidas para determinar si son aprobatorias o no, una vez hecho esto se deben realizar las sumas correspondientes para posteriormente sacar el promedio de los alumnos aprobados y ver cuantos alumnos reprobaron.
 #### 1.2 DFD
 ![7 (While)](https://user-images.githubusercontent.com/113395327/197688455-e00cb974-0a95-45e3-9181-aef805bd31be.png)
 #### 1.3 Prueba de escritorio 
@@ -754,7 +755,7 @@ print("El total de reprobados fueron >> ",(len(alumnos)-j))
 ```
 ### Ejercicio 7. Obtener el promedio de las calificaciones aprobatorias y la cantidad de alumnos reprobados. La calificación entre 0 y 10 y el maximo de alumnos es de 15. (DO-WHILE)
 #### 1.1 Analisis. 
-Sumar las calificaiones de los alumnos aprobados y sacarles el promedio, despues contar la cantidad de reprobados mayores a 5.
+Se necesita evaluar todas las calificaciones obtenidas para determinar si son aprobatorias o no, una vez hecho esto se deben realizar las sumas correspondientes para posteriormente sacar el promedio de los alumnos aprobados y ver cuantos alumnos reprobaron.
 #### 1.2 DFD
 ![7 (Do-While)](https://user-images.githubusercontent.com/113395327/197688485-7cbe452b-ac52-43d2-9b69-d36af9fc360f.png)
 #### 1.3 Prueba de escritorio 
@@ -1158,7 +1159,7 @@ print("Promedio de aprobados:", promedioAprobados)
 
 ### Ejercicio 10. Un dfd que capture 10 números enteros positivos y los almacene en un array. *Sacar el número mayor y el menor.
 #### 1.1 Analisis. 
-
+Almacenar en un vector 10 números enteros ingresados por el usuario y posteriormente realizar diversas operaciones para determinar que número es mayor y cual es menor.
 #### 1.2 DFD.
 ![11](https://user-images.githubusercontent.com/113395327/197684226-87886cc7-470a-4c5f-8a3a-9fa33659f4f4.png)
 #### 1.3 Prueba de escritorio 
@@ -1263,7 +1264,8 @@ void main(List<String> args) {
 ```
 
 ### Ejercicio 13. Escriba un dfd que escriba el siguiente dibujo.
-#### 1.1 Analisis. Desarrollar el siguiente diagrama de flujo.
+#### 1.1 Analisis.
+Desarrollar el siguiente diagrama de flujo.
 #### 1.2 DFD
 ![14](https://user-images.githubusercontent.com/113395327/197684075-b7439c57-f658-44ec-b8d3-cb3a0f734614.png)
 #### 1.3 Prueba de escritorio 
@@ -1288,6 +1290,10 @@ void main(List<String> args) {
 No tiene ninguna entrada
 #### 1.5 Salidas.
 *
+**
+***
+****
+*****
 #### 1.6 Codigo.
 ```dart
 import 'dart:io';
