@@ -1371,10 +1371,6 @@ Desarrollar el siguiente diagrama de flujo.
 No tiene ninguna entrada
 #### 1.5 Salidas.
 *
-**
-***
-****
-*****
 #### 1.6 Codigo.
 ```dart
 import 'dart:io';
