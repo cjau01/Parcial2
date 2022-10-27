@@ -833,14 +833,16 @@ void main() {
 |LI|LI=>0|LS|LS>LI|N|N>0|i|i<N|Num|Num>0|Num>LI|Num<=LS1|Num%2==0|S_P= S_P+Num|C_P=C_P+1|S_I=S_I+Num|C_I=C_I+1|i+1|P_P=S_P/C_P|P_I=S_I/C_I|P_P>P_I|
 |-|-|-|-|-|-|-|-|-|-|-|-|-|-|-|-|-|-|-|-|-|
 |2|2>0|10|10>2|6|6>0|0|0<6|8|8>0|8>2|8<=10|8%2==0|0+8|0+1|||0+1||||
-|||||||1|1<6|7|7>0|7>1|7<=8||||7+0|0+1|1+1||||
-|||||||2|2<6|2|2>0|2>1|2<=8|2%2==0|4+2|1+1|||2+1||||
-|||||||4|4<6|6|6>0|6>1|6<=8|6%2==0|6+6|2+1|||4+1||||
-|||||||3|3<6|5|5>0|5>1|5<=8||||7+5|1+1|3+1||||
-|||||||5|5<6|3|3>0|3>1|3<=8||||12+3|2+1|5+1||||
-|||||||6||||||||||||P_P=12/3|P_I=15/3|4>5|
+|||||||1|1<6|7|7>0|7>2|7<=10||||7+0|0+1|1+1||||
+|||||||2|2<6|4|4>0|4>2|4<=10|4%2==0|8+4|1+1|||2+1||||
+|||||||3|3<6|6|6>0|6>2|6<=10|6%2==0|12+6|2+1|||3+1||||
+|||||||4|4<6|5|5>0|5>2|5<=10||||7+5|1+1|4+1||||
+|||||||5|5<6|3|3>0|3>2|3<=10||||12+3|2+1|5+1||||
+|||||||6||||||||||||P_P=18/3|P_I=15/3|6>5|
 #### 1.4 Entradas.
+LI; LS; N; Num.
 #### 1.5 Salidas.
+P_P "Es mayor"; P_I "Es mayor".
 #### 1.6 Codigo.
 ```py
 sp=0
@@ -903,14 +905,25 @@ if(pp>pi):
 else:
     print("El PI es mayor que el PP")
 ```
-### Ejercicio 8. Capturar n números en el rango [Li,LS] donde: Li=límite inferior y LS= límite superior, para Li<Ls y Li<LS y Li>0, obtenga: -la cantidad de numeros pares y su promedio. -La cantidad de números impares y su promedio. ¿Cuál promedio es mayor?
+### Ejercicio 8. Capturar n números en el rango [Li,LS] donde: Li=límite inferior y LS= límite superior, para Li<Ls y Li<LS y Li>0, obtenga: -la cantidad de numeros pares y su promedio. -La cantidad de números impares y su promedio. ¿Cuál promedio es mayor? (WHILE)
 #### 1.1 Analisis.
 
 #### 1.2 DFD
 ![8 (While)](https://user-images.githubusercontent.com/113395327/197688584-5ca91bc8-9620-431c-a661-81d7ff09acbb.png)
-#### 1.3 Prueba de escritorio 
+#### 1.3 Prueba de escritorio
+|LI|LI>0|LS|LS=>LI|N|N=>0|C_N|C_N<N|Num|Num>0|Num>LI|Num<=LS|Num%2==0|S_P= S_P+Num|C_P=C_P+1|S_I=S_I+Num|C_I=C_I+1|C_N+1|P_P=S_P/C_P|P_I=S_I/C_I|P_P>P_I|
+|-|-|-|-|-|-|-|-|-|-|-|-|-|-|-|-|-|-|-|-|-|
+|1|1>0|8|8>1|6|6>0|0|0<6|4|4>0|4>1|4<=8|4%2==0|0+4|0+1|||0+1||||
+|||||||1|1<6|7|7>0|7>1|7<=8||||7+0|0+1|1+1||||
+|||||||2|2<6|8|8>0|8>1|8<=8|8%2==0|4+8|1+1|||2+1||||
+|||||||3|3<6|5|5>0|5>1|5<=8||||7+5|1+1|3+1||||
+|||||||4|4<6|6|6>0|6>1|6<=8|6%2==0|12+6|2+1|||4+1||||
+|||||||5|5<6|3|3>0|3>1|3<=8||||12+3|2+1|5+1||||
+|||||||6||||||||||||P_P=18/3|P_I=15/3|6>5|
 #### 1.4 Entradas.
+LLI; LS; N; Num.
 #### 1.5 Salidas.
+P_P "Es mayor"; P_I "Es mayor".
 #### 1.6 Codigo.
 ```py
 print("Dame Límite inferior: ")
@@ -955,13 +968,23 @@ if prom_pares > prom_impares:
 else:
     print("El promedio de los números impares es mayor que el promedio de los pares.")
 ```
-### Ejercicio 8. 
-#### 1.1 Analisis. 
+### Ejercicio 8. Capturar n números en el rango [Li,LS] donde: Li=límite inferior y LS= límite superior, para Li<Ls y Li0, obtenga: -la cantidad de numeros pares y su promedio. -La cantidad de números impares y su promedio. ¿Cuál promedio es mayor? (DO-WHILE)
+#### 1.1 Analisis.
+
 #### 1.2 DFD
 ![8 (Do-While)](https://user-images.githubusercontent.com/113395327/197688603-78d031c0-5bca-476a-830a-75663f4353c6.png)
-#### 1.3 Prueba de escritorio 
+#### 1.3 Prueba de escritorio.
+|LI|LI>0|LS|LS>LI|N|N>0|C_N|Num|Num>0|Num>LI|Num<=LS1|Num%2==0|S_P= S_P+Num|C_P=C_P+1|S_I=S_I+Num|C_I=C_I+1|C_N+1|C_N<=N|P_P=S_P/C_P|P_I=S_I/C_I|P_P>P_I|
+|-|-|-|-|-|-|-|-|-|-|-|-|-|-|-|-|-|-|-|-|-|
+|2|2>0|9|9>2|5|5>0|0|8|8>0|8>2|8<=9|8%2==0|0+8|0+1|||0+1|0<5||||
+|||||||1|2|2>0|2>2|2<=9|2%2==0|8+2|1+1|||1+1|1<5||||
+|||||||2|7|7>0|7>2|7<=9||||0+7|0+1|2+1|2<5||||
+|||||||3|5|5>0|5>2|5<=9||||7+5|1+1|3+1|3<5||||
+|||||||4|6|6>0|6>2|6<=9|6%2==0|10+6|4+1|||4+1||P_I=12/2|P_P=16/3|6>5.3|
 #### 1.4 Entradas.
+LI; LS; N; Num;
 #### 1.5 Salidas.
+P_P "Es mayor"; P_I "Es mayor".
 #### 1.6 Codigo.
 ```dar
 import 'dart:io';
@@ -1012,13 +1035,27 @@ void main() {
   }
 }
 ```
-### Ejercicio 9. 
-#### 1.1 Analisis. 
+### Ejercicio 9. Obtener la frecuencia de n calificaciones entre 1 y 10, obtener la cantidad de reprobados, la cantidad de aprobados, el promedio de aprobados y el promedio general.(FOR)
+#### 1.1 Analisis.
 #### 1.2 DFD
 ![9 (For)](https://user-images.githubusercontent.com/113395327/197688637-9a00679f-1399-4b3b-8943-94b722e29fac.png)
-#### 1.3 Prueba de escritorio 
+#### 1.3 Prueba de escritorio.
+|CAL[1,10]|N|N>0|i|i<=N|CAL[1,10]|C|C>0, C<=10|CAL[C]++|i++|CAL|
+|-|-|-|-|-|-|-|-|-|-|-|
+|9|4|4>0|0|0<=4|0|9|9>0, 9<=0|10|1|9|
+|9|||1|1<=4|1|9|9>0, 9<=0|10|2|9|
+|8|4|4>0|0|2<=4|2|8|8>0, 8<=0|9|3|8|
+|7|||1|3<=4|3|7|7>0, 7<=0|8|4|7|
+|CR|CA|PR|PA|PG|SR|SA|N|i|i<=n|NUM|NUM>0,NUM<=10|NUM>=6|CA+1|SA+NUM|CR+1|SR+NUM|i++|PA=SA/CA|PR=SR/CR|PG=(PR+PA)/2|PG|
+|-|-|-|-|-|-|-|-|-|-|-|-|-|-|-|-|-|-|-|-|-|-|
+|0|0|0|0|0|0|0|4|0|0< 4|8|8>=0,8<=10|8>=6|1|8|0|0|1|
+|0|1|0|0|0|0|8|4|1|1< 4|5|5>=0,5<=10|5>=6|1|8|1|5|2|
+|1|1|0|0|0|5|8|4|2|2< 4|9|9>=0,9<=10|9>=6|2|17|1|5|3|
+|1|2|0|0|0|5|7|4|3|3< 4|3|3>=0,3<=10|3>=6|2|17|2|8|4|17/2|8/4|(8.5+4)/2|6.25|
 #### 1.4 Entradas.
+N; C.
 #### 1.5 Salidas.
+C_A; C_R; P_A; Cal.
 #### 1.6 Codigo.
 ```py
 Calificaciones=int(input("Ingrese la cantidad de calificaciones"))
@@ -1063,13 +1100,28 @@ print("Cantidad de aprobados:", aprobado)
 print("Promedio de aprobados:", promedioAprobados)
 print("Desaprobados:", reprobado)
 ```
-### Ejercicio 9. 
+### Ejercicio 9. Obtener la frecuencia de n calificaciones entre 1 y 10, obtener la cantidad de reprobados, la cantidad de aprobados, el promedio de aprobados y el promedio general. (WHILE)
 #### 1.1 Analisis. 
 #### 1.2 DFD
 ![9 (While)](https://user-images.githubusercontent.com/113395327/197688668-601d5b47-281d-4231-9cb2-e656611b73b9.png)
-#### 1.3 Prueba de escritorio 
+#### 1.3 Prueba de escritorio.
+|CAL[1,10]|N|N>0|C|C<=N|CAL[1,10]|C|C>0, C<=10|CAL[C]++|C+1|CAL|
+|-|-|-|-|-|-|-|-|-|-|-|
+|9|4|4>0|0|0<=4|0|9|9>0, 9<=0|10|1|9|
+|9|||1|1<=4|1|9|9>0, 9<=0|10|2|9|
+|8|4|4>0|0|2<=4|2|8|8>0, 9<=0|9|3|8|
+|7|||1|3<=4|3|7|7>0, 9<=0|8|4|7|
+
+|CR|CA|PR|PA|PG|SR|SA|N|C|C<=n|NUM|NUM>0,NUM<=10|NUM>=6|CA+1|SA+NUM|CR+1|SR+NUM|C+1|PA=SA/CA|PR=SR/CR|PG=(PR+PA)/2|PG|
+|-|-|-|-|-|-|-|-|-|-|-|-|-|-|-|-|-|-|-|-|-|-|
+|0|0|0|0|0|0|0|4|0|0< 4|8|8>=0,8<=10|8>=6|1|8|0|0|1|
+|0|1|0|0|0|0|8|4|1|1< 4|5|5>=0,5<=10|5>=6|1|8|1|5|2|
+|1|1|0|0|0|5|8|4|2|2< 4|9|9>=0,9<=10|9>=6|2|17|1|5|3|
+|1|2|0|0|0|5|7|4|3|3< 4|3|3>=0,3<=10|3>=6|2|17|2|8|4|17/2|8/4|(8.5+4)/2|6.25|
 #### 1.4 Entradas.
+N; C.
 #### 1.5 Salidas.
+C_A; C_R; P_A; CAL.
 #### 1.6 Codigo.
 ```py
 Calificaciones=int(input("Ingrese la cantidad de calificaciones"))
@@ -1115,13 +1167,28 @@ print("Cantidad de aprobados:", aprobado)
 print("Promedio de aprobados:", promedioAprobados)
 print("Desaprobados:", reprobado)
 ```
-### Ejercicio 9. 
+### Ejercicio 9. Obtener la frecuencia de n calificaciones entre 1 y 10, obtener la cantidad de reprobados, la cantidad de aprobados, el promedio de aprobados y el promedio general. (DO-WHILE)
 #### 1.1 Analisis. 
 #### 1.2 DFD
 ![9 (Do-While)](https://user-images.githubusercontent.com/113395327/197688706-f4036b1b-f435-472c-b2ac-520327f67105.png)
-#### 1.3 Prueba de escritorio 
+#### 1.3 Prueba de escritorio.
+CAL[1,10]|N|N>0|C|C<=N|CAL[1,10]|C|C>0, C<=10|CAL[C]++|C+1|CAL|
+|-|-|-|-|-|-|-|-|-|-|-|
+|9|4|4>0|0|0<=4|0|9|9>0, 9<=0|10|1|9|
+|9|||1|1<=4|1|9|9>0, 9<=0|10|2|9|
+|8|4|4>0|0|2<=4|2|8|8>0, 9<=0|9|3|8|
+|7|||1|3<=4|3|7|7>0, 9<=0|8|4|7|
+
+|CR|CA|PR|PA|PG|SR|SA|N|C|C<=n|NUM|NUM>0,NUM<=10|NUM>=6|CA+1|SA+NUM|CR+1|SR+NUM|C+1|PA=SA/CA|PR=SR/CR|PG=(PR+PA)/2|PG |
+|-|-|-|-|-|-|-|-|-|-|-|-|-|-|-|-|-|-|-|-|-|-|
+|0|0|0|0|0|0|0|4|0|0<4|8|8>=0,8<=10|8>=6|1|8|0|0|1|
+|0|1|0|0|0|0|8|4|1|1<4|5|5>=0,5<=10|5>=6|1|8|1|5|2|
+|1|1|0|0|0|5|8|4|2|2<4|9|9>=0,9<=10|9>=6|2|17|1|5|3|
+|1|2|0|0|0|5|7|4|3|3<4|3|3>=0,3<=10|3>=6|2|17|2|8|4|17/2|8/4|(8.5+4)/2|6.25|
 #### 1.4 Entradas.
+N; C.
 #### 1.5 Salidas.
+C_A; C_R; P_A; CAL.
 #### 1.6 Codigo.
 ```py
 Calificaciones=int(input("Ingrese la cantidad de calificaciones"))
@@ -1162,9 +1229,23 @@ print("Promedio de aprobados:", promedioAprobados)
 Almacenar en un vector 10 números enteros ingresados por el usuario y posteriormente realizar diversas operaciones para determinar que número es mayor y cual es menor.
 #### 1.2 DFD.
 ![11](https://user-images.githubusercontent.com/113395327/197684226-87886cc7-470a-4c5f-8a3a-9fa33659f4f4.png)
-#### 1.3 Prueba de escritorio 
+#### 1.3 Prueba de escritorio.
+|A[10] |i=1 |i<=10|N |A[i]|N>0|NUM[i]=N|i++|NUM|MAYOR|i |i<=10|MAYOR>NUM[i]|MAYOR=NUM[i]|i++|MAYOR|MENOR=MAYOR|i |i<=10|MENOR<NUM[i]|MENOR=NUM[i]|i++|MENOR|
+|-|-|-|-|-|-|-|-|-|-|-|-|-|-|-|-|-|-|-|-|-|-|-|
+|0|1|1<=10|1|1|1>0|1|2|1|0|1|1<=10|0>1|1|2||10|1|1<=10|10<1|1|2||
+|1|2|2<=10|2|2|2>0|2|3|2|1|2|2<=10|1>2|2|3|||2|2<=10|1<2||3||
+|2|3|3<=10|3|3|3>0|3|4|3|2|3|3<=10|2>3|3|4|||3|3<=10|1<3||4||     
+|3|4|4<=10|4|4|4>0|4|5|4|3|4|4<=10|3>4|4|5|||4|4<=10|1<4||5||
+|4|5|5<=10|5|5|5>0|5|6|5|4|5|5<=10|4>5|5|6|||5|5<=10|1<5||6||
+|5|6|6<=10|6|6|6>0|6|7|6|5|6|6<=10|5>6|6|7|||6|6<=10|1<6||7||
+|6|7|7<=10|7|7|7>0|7|8|7|6|7|7<=10|6>7|7|8|||7|7<=10|1<7||8||
+|7|8|8<=10|8|8|8>0|8|9|8|7|8|8<=10|7>8|8|9|||8|8<=10|1<8||9||
+|8|9|9<=10|9|8|9>0|9|10|9|8|9|9<=10|8>9|9|10|||9|9<=10|1<9||10||
+|9|10|10<=10|10|9|10>0|10||10|9|10|10<=10|9>10|10||10||10|10<=10|1<10|||1| 
 #### 1.4 Entradas.
+No tiene entradas.
 #### 1.5 Salidas.
+NUM.
 #### 1.6 Codigo.
 ```py
 lista = [10]
