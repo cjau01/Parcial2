@@ -21,7 +21,7 @@ Contar del 1 al 10 dentro de una condicional, posteriormente sumar los valores e
 #### 1.4 Entradas.
 No tiene ninguna entrada.
 #### 1.5 Salidas.
-55.
+S.
 #### 1.6 Codigo.
 ```dart
 void main(List<String> args) {
@@ -34,7 +34,7 @@ void main(List<String> args) {
 ```
 ### Ejercicio 1. Contar del 1 hasta el 10 y sumar los valores. (WHILE)
 #### 1.1 Analisis. 
-Utilizar un proceso para las variables de suma y contados, despues con una condicion validar la suma de los valores del 1 al 10.
+Utilizar un proceso para las variables de suma y contador, despues con una condicion validar la suma de los valores del 1 al 10.
 #### 1.2 DFD
 ![1 (While)](https://user-images.githubusercontent.com/113395327/197660681-49bfc8f7-5ed8-49f0-988d-490046d78f77.png)
 #### 1.3 Prueba de escritorio 
@@ -53,7 +53,7 @@ Utilizar un proceso para las variables de suma y contados, despues con una condi
 #### 1.4 Entradas.
 No tiene ninguna entrada.
 #### 1.5 Salidas.
-55.
+S.
 #### 1.6 Codigo.
 ```dart
 void main(List<String> args) {
@@ -68,7 +68,7 @@ void main(List<String> args) {
 ```
 ### Ejercicio 1. Contar del 1 hasta el 10 y sumar los valores. (DO-WHILE)
 #### 1.1 Analisis. 
-En Utilizar un proceso para las varibles de contador y suma, despues con otro proceso hacer la suma, y luego el contador para validar las veces.
+Utilizar un proceso para las varibles de contador y suma, despues con otro proceso hacer la suma, y luego el contador para validar las veces.
 #### 1.2 DFD
 ![1 (Do-While)](https://user-images.githubusercontent.com/113395327/197660698-c39d7d57-68ec-4d22-b9dc-0f7546518bfd.png)
 #### 1.3 Prueba de escritorio 
@@ -87,7 +87,7 @@ En Utilizar un proceso para las varibles de contador y suma, despues con otro pr
 #### 1.4 Entradas.
 No tiene ninguna entrada.
 #### 1.5 Salidas.
-55.
+S.
 #### 1.6 Codigo.
 ```dart
 void main(List<String> args) {
@@ -116,7 +116,7 @@ Sumar los numeros pares del 1 al 10.
 #### 1.4 Entradas.
 No tiene ninguna entrada.
 #### 1.5 Salidas.
-30.
+S.
 #### 1.6 Codigo.
 ```dart
 void main(List<String> args) {
@@ -143,7 +143,7 @@ Sumar los numeros pares del 1 al 10.
 #### 1.4 Entradas.
 No tiene ninguna entrada.
 #### 1.5 Salidas.
-30.
+S.
 #### 1.6 Codigo.
 ```dart
 void main(List<String> args) {
@@ -171,7 +171,7 @@ Sumar los numeros pares del 1 al 10.
 #### 1.4 Entradas.
 No tiene ninguna entrada.
 #### 1.5 Salidas.
-30.
+S.
 #### 1.6 Codigo.
 ```dart
 void main(List<String> args) {
@@ -823,8 +823,9 @@ void main() {
   print('La cantidad de reprobados son $contr');
 }
 ```
-### Ejercicio 8. 
+### Ejercicio 8. Capturar n números en el rango [Li,LS] donde: Li=límite inferior y LS= límite superior, para Li<Ls y Li<LS y Li>0, obtenga: -la cantidad de numeros pares y su promedio. -La cantidad de números impares y su promedio. ¿Cuál promedio es mayor? (FOR)
 #### 1.1 Analisis. 
+  
 #### 1.2 DFD
 ![8 (For)](https://user-images.githubusercontent.com/113395327/197688541-2d6416ea-fe06-41cf-b2b4-55418564b7e8.png)
 #### 1.3 Prueba de escritorio 
@@ -901,8 +902,9 @@ if(pp>pi):
 else:
     print("El PI es mayor que el PP")
 ```
-### Ejercicio 8. 
-#### 1.1 Analisis. 
+### Ejercicio 8. Capturar n números en el rango [Li,LS] donde: Li=límite inferior y LS= límite superior, para Li<Ls y Li<LS y Li>0, obtenga: -la cantidad de numeros pares y su promedio. -La cantidad de números impares y su promedio. ¿Cuál promedio es mayor?
+#### 1.1 Analisis.
+
 #### 1.2 DFD
 ![8 (While)](https://user-images.githubusercontent.com/113395327/197688584-5ca91bc8-9620-431c-a661-81d7ff09acbb.png)
 #### 1.3 Prueba de escritorio 
@@ -1154,8 +1156,9 @@ print("Cantidad de reprobados:", reprobado)
 print("Promedio de aprobados:", promedioAprobados)
 ```
 
-### Ejercicio 10. 
+### Ejercicio 10. Un dfd que capture 10 números enteros positivos y los almacene en un array. *Sacar el número mayor y el menor.
 #### 1.1 Analisis. 
+
 #### 1.2 DFD.
 ![11](https://user-images.githubusercontent.com/113395327/197684226-87886cc7-470a-4c5f-8a3a-9fa33659f4f4.png)
 #### 1.3 Prueba de escritorio 
@@ -1175,8 +1178,9 @@ print("Numero mayor es ",max(lista))
 print("Numero menor es ",min(lista))
 ```
 
-### Ejercicio 11. 
+### Ejercicio 11. Obtenga la distancia mayor entre 2 números consecutivos en una lista de 10 números.
 #### 1.1 Analisis. 
+
 #### 1.2 DFD
 ![12](https://user-images.githubusercontent.com/113395327/197684202-afbcfb05-e77c-4657-97aa-c9c7c5377989.png)
 #### 1.3 Prueba de escritorio 
@@ -1223,7 +1227,7 @@ void main() {
 
 ### Ejercicio 12. Almacene en un vector el resultado de una tabla (10 numeros)
 #### 1.1 Analisis. 
-Al tamaño del array sera de 10, validaremos el numero de la tabla, en una condición de termino.
+El tamaño del array sera de 10, validaremos el numero de la tabla, en una condición de termino.
 #### 1.2 DFD
 ![13](https://user-images.githubusercontent.com/113395327/197684095-af2797a3-870a-44fe-a951-5756dbb6a704.png)
 #### 1.3 Prueba de escritorio 
